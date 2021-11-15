@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../planet-css/mars.css">
+    <title>Planeta Marte</title>
+</head>
+<body>
+
+<!-- NAVEGADOR -->
+
+<div class="navegador">
+    <nav class="navegation-page">
+        <div class="planet-name"> <p>MARS</p></div>
+        <div class="navegator-web">
+            <ul>
+                <li><a href="../planet-html/index.html">Inicio</a></li>
+                <li><a href="#">Viaje a</a></li>
+                <li><a href="#">Explora</a></li>
+                <li><a href="#">Habitat</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- BLOQUE-PLANETA -->
+
+<section class="planet-content">
+
+   <div class="planet">
+       <div class="mars"></div>
+       <div class="mars-shadow"></div>
+       <button class="btn-to-mars">
+           <span class="mars-btn">Viajar a</span>
+           <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+           </svg>
+        </button>
+   </div>
+
+   <div class="planet-info">
+        <h2 class="tittle-planet-info">Planeta Marte <hr></h2>
+        <div class="sub-tittle"><img src="../planet-img/img-eclipse-mars.png" alt="imagen del planeta marte">    
+    </div> 
+        <div class="mars-txt">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis labore explicabo tempore libero quibusdam optio fugit laboriosam repellat, ducimus ipsam sunt officia aspernatur a adipisci dignissimos commodi quisquam unde voluptatibus asperiores quidem amet iusto? Cumque incidunt odio, sit ex porro mollitia quibusdam tenetur obcaecati asperiores enim blanditiis possimus beatae ipsam? Molestiae saepe quisquam et recusandae neque, provident quaerat eaque quis reiciendis tempore fuga magni incidunt ratione accusantium corrupti. Saepe ad voluptate eum? Corporis pariatur, non sed rerum molestiae qui saepe consequuntur facere harum exercitationem voluptas? Dicta, excepturi aut porro soluta quo voluptate, fuga nesciunt ipsam dolorem, consequuntur expedita! Exercitationem ab nobis architecto ea, ipsa quod atque temporibus voluptatibus aut culpa, suscipit beatae, praesentium maxime dolorem ut voluptatum aliquid cupiditate necessitatibus quidem! Voluptatem suscipit laboriosam perferendis tempore omnis qui modi, rem nisi! Hic consequatur deleniti voluptates ut ratione itaque doloribus dolores nihil in? Ullam quis ipsum obcaecati assumenda, quasi magnam placeat voluptatem </p>
+        </div>
+    <div class="mars-stats">
+        <ul>
+            <li>
+                <p class="dato">3.389,5km</p>
+                <p class="descripcion">Radio</p>
+            </li>
+            <li> 
+                <p class="dato">54,600.000 km</p>
+                <p class="descripcion">Distancia de la tierra</p>
+            </li>
+            <li> 
+                <p class="dato">-146ºC, +20ºC</p>
+                <p class="descripcion">temperatura</p>
+            </li>
+            <li> 
+                <p class="dato">144,800.000 km²</p>
+                <p class="descripcion">superficie total</p>
+            </li>
+        </ul>
+    </div>
+   </div> 
+
+</section>
+
+<!-- SECCION-TARJETAS -->
+
+<section class="section-tarjet">
+    <!-- <hr class="separador"> -->
+    <h2>Caracteristicas</h2>
+    <div class="main-tarjet">
+
+         <div class="tarjet">
+             <h3>Información</h3> <hr>
+             <img src="../planet-img/mars-superficie.jpg" alt="mars-superficie-planeta">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nemo debitis est ea? Ut, enim. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eum?</p>
+         </div>
+
+         <div class="tarjet">
+             <h3>Información</h3> <hr>
+             <img src="../planet-img/mars-cohete.jpg" alt="mars-cohete-viaje-espacial">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nemo debitis est ea? Ut, enim. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, totam.</p>
+         </div>
+
+         <div class="tarjet">
+             <h3>Información</h3> <hr>
+             <img src="../planet-img/perseverance-mars.jpg" alt="mars-perseverance">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nemo debitis est ea? Ut, enim. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, distinctio.</p>
+         </div>  
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<div class="footer-section">
+    <nav class="footer">
+        <ul>
+            <li class="planet-name">
+                <p> MARS</p>
+            </li>
+            <li>
+                <img class="nasa-logo" src="../planet-img/nasa-logo-4.png" alt="imagen del logo de la nasa">
+            </li>
+            
+            <li>
+                <h3> <a href="#">Información</a></h3>
+                <p><a href="#">Viaja</a></p>
+                <p><a href="#">Habitat</a></p>
+                <p><a href="#">Aliens</a></p>
+            </li>
+            <li>
+                <h3><a href="#">Sobre Nosotros</a></h3>
+                <p><a href="#">Reservas</a></p>
+                <p><a href="#">Información</a></p>
+                <p><a href="#">??????</a></p>
+            </li> 
+        </ul>
+    </nav>
+</div>
+
+<script src="../planet-js/mars.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".tarjet"),
+    {
+        max: 25,
+		speed: 600,
+        glare: true,
+        "max-glare":.4,
+        gyroscope:              true,    // Boolean to enable/disable device orientation detection,
+    gyroscopeMinAngleX:     -45,     // This is the bottom limit of the device angle on X axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the left border of the element;
+    gyroscopeMaxAngleX:     45,      // This is the top limit of the device angle on X axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the right border of the element;
+    gyroscopeMinAngleY:     -45,     // This is the bottom limit of the device angle on Y axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the top border of the element;
+    gyroscopeMaxAngleY:     45, 
+    }
+    
+    );
+</script>
+</body>
+</html>
